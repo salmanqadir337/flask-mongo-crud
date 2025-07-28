@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit User</title>
+</head>
+<body>
+    <h2>Edit User</h2>
+    <form action="/update/{{ student._id }}" method="post">
+        Name: <input type="text" name="name" value="{{ student.name }}" required>
+        Email: <input type="email" name="email" value="{{ student.email }}" required>
+        <button type="submit">Update</button>
+    </form>
+    <br>
+    <a href="/">← Back to List</a>
+</body>
+</html>
